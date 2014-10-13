@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Monospace</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Note Maker</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="wdgtCentral">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>1</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tbwMain">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="tbMain">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actAddNote"/>
+   <addaction name="actRemoveNote"/>
+   <addaction name="actListNotes"/>
+   <addaction name="actSettings"/>
+  </widget>
+  <action name="actAddNote">
+   <property name="icon">
+    <iconset resource="NoteMaker.qrc">
+     <normaloff>:/img/Add.png</normaloff>:/img/Add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add a note...</string>
+   </property>
+   <property name="toolTip">
+    <string>Add a note...</string>
+   </property>
+  </action>
+  <action name="actRemoveNote">
+   <property name="icon">
+    <iconset resource="NoteMaker.qrc">
+     <normaloff>:/img/Remove.png</normaloff>:/img/Remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove a note...</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove a note...</string>
+   </property>
+  </action>
+  <action name="actListNotes">
+   <property name="icon">
+    <iconset resource="NoteMaker.qrc">
+     <normaloff>:/img/Menu Item.png</normaloff>:/img/Menu Item.png</iconset>
+   </property>
+   <property name="text">
+    <string>List all notes...</string>
+   </property>
+   <property name="toolTip">
+    <string>List all notes...</string>
+   </property>
+  </action>
+  <action name="actSettings">
+   <property name="icon">
+    <iconset resource="NoteMaker.qrc">
+     <normaloff>:/img/Gear.png</normaloff>:/img/Gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Open the settings...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="NoteMaker.qrc"/>
+ </resources>
+ <connections/>
+</ui>
