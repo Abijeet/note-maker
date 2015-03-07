@@ -12,8 +12,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>734</width>
-    <height>585</height>
+    <width>917</width>
+    <height>784</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -97,38 +97,12 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actAddNote"/>
-   <addaction name="actRemoveNote"/>
    <addaction name="actListNotes"/>
    <addaction name="actSettings"/>
   </widget>
-  <action name="actAddNote">
-   <property name="icon">
-    <iconset resource="NoteMaker.qrc">
-     <normaloff>:/img/Add.png</normaloff>:/img/Add.png</iconset>
-   </property>
-   <property name="text">
-    <string>Add a note...</string>
-   </property>
-   <property name="toolTip">
-    <string>Add a note...</string>
-   </property>
-  </action>
-  <action name="actRemoveNote">
-   <property name="icon">
-    <iconset resource="NoteMaker.qrc">
-     <normaloff>:/img/Remove.png</normaloff>:/img/Remove.png</iconset>
-   </property>
-   <property name="text">
-    <string>Remove a note...</string>
-   </property>
-   <property name="toolTip">
-    <string>Remove a note...</string>
-   </property>
-  </action>
   <action name="actListNotes">
    <property name="icon">
-    <iconset resource="NoteMaker.qrc">
+    <iconset resource="../NoteMaker.qrc">
      <normaloff>:/img/Menu Item.png</normaloff>:/img/Menu Item.png</iconset>
    </property>
    <property name="text">
@@ -140,7 +114,7 @@
   </action>
   <action name="actSettings">
    <property name="icon">
-    <iconset resource="NoteMaker.qrc">
+    <iconset resource="../NoteMaker.qrc">
      <normaloff>:/img/Gear.png</normaloff>:/img/Gear.png</iconset>
    </property>
    <property name="text">
@@ -153,7 +127,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="NoteMaker.qrc"/>
+  <include location="../NoteMaker.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -3,8 +3,8 @@
 #include <QStandardPaths>
 #include <QFile>
 
-#include "dbmanager.h"
-#include "constants.h"
+#include "headers/dbmanager.h"
+#include "headers/constants.h"
 
 DBManager::DBManager() {
     this->dbLocation = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/" + APPLICATION_DB;

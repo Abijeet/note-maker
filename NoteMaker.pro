@@ -12,18 +12,21 @@ TARGET = NoteMaker
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    frmaddnote.cpp \
-    dbmanager.cpp
+SOURCES += src/main.cpp\
+        src/mainwindow.cpp \
+    src/frmaddnote.cpp \
+    src/dbmanager.cpp \
+    src/frmtaskcalendar.cpp
 
-HEADERS  += mainwindow.h \
-    frmaddnote.h \
-    dbmanager.h \
-    constants.h
+HEADERS  += headers/mainwindow.h \
+    headers/frmaddnote.h \
+    headers/dbmanager.h \
+    headers/constants.h \
+    headers/frmtaskcalendar.h
 
-FORMS    += mainwindow.ui \
-    frmaddnote.ui
+FORMS    += ui/mainwindow.ui \
+    ui/frmaddnote.ui \
+    ui/frmtaskcalendar.ui
 
 RESOURCES += \
     NoteMaker.qrc

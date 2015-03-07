@@ -1,4 +1,4 @@
-#include "frmaddnote.h"
+#include "headers/frmaddnote.h"
 #include "ui_frmaddnote.h"
 
 FrmAddNote::FrmAddNote(QWidget *parent) :
